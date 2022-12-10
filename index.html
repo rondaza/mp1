@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+</head>
+<body> 
+    <div class="banner container-fluid row mx-auto">
+        <div class="navbar col-12 mx-auto">
+            <img src="logo.png" class="logo" alt="ICMAC smallville">
+            <ul class="nav-item dropdown">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown">About</a>
+                    <ul class="dropdown-menu bg-secondary">
+                        <li><a class="dropdown-item text-dark" href="#acord">Mission</a></li>
+                        <li><a class="dropdown-item text-dark" href="#acord">Vision</a></li>
+                        <li><a class="dropdown-item text-dark" href="#acord">Statement of Faith</a></li>
+                        <li><a class="dropdown-item text-dark" href="#acord">Our Core Values</a></li>
+                        <li><a class="dropdown-item text-dark" href="#leaders">Meet the Leaders</a></li>
+                    </ul>
+                </li>
+                <li><a href="Involved.html">Get Involved</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                <li><a href="give.html">Give</a></li>
+            </ul>
+        </div>
+    
+
+        <div class="col-12 content mx-auto" id="welcome">
+            <h1>"We <span>Welcome</span> You Here"</h1>
+            <p>Let us know God and make Him known to the world</p>
+            <br>
+            <div>
+                <button type="button" class="flip" onClick="window.location.href='involved.html'" id="contentbtn"><span></span>JOIN US</button>
+                <button type="button" class="flip" value="Redirect To Div" onClick="window.location='#statement'" href="#statement" id="contentbtn"><span></span>KNOW MORE</button>
+            
+            </div>
+        </div>
+    </div>
+    </div>
+     <div class="container-fluid-md" id="statement">
+        <h2>ILOILO CHRISTIAN AND MISSIONARY ALLIANCE CHURCH</h2>
+            <p>We are happy you are here. If you want to know more about who Jesus is and tell others about Him. We are glad to welcome you. </p>
+            <div class="row"> 
+            <div class="col bg-light border m-1 p-5">
+                <h3>Sunday Worship</h3>
+                <p>9:30am-11:00am (Main Sanctuary)</p>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#regmodal">Schedule a visit</button>
+            </div>
+            <div class="modal fade" id="regmodal">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Please Fill In Details</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <label for="fname">Full Name:</label><br>
+                                <input type="text" id="fname" name="fname" placeholder="Last Name, First Name" size="50"><br>
+                                <label for="address">Address:</label><br>
+                                <input type="text" id="address" name="address" placeholder="city or country" size="50"><br>
+                                <label for="phone">Contact No.:</label><br>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="mobile" size="50"><br>
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" name="email" size="50"><br><br>
+                                <label for="visitdate">Plan to visit (date):</label><br>
+                                <input type="date" id="visitdate" name="visitdate"><br><br>
+                                <input type="radio" name="gender" id="gender" required > Male        
+                                <input type="radio" name="gender" id="gender" required > Female <br><br>
+                                <h6>How can we help you?</h6>
+                                <input type="checkbox" id="concern1" name="concern1" value="Boat">
+                                <label for="concern1"> I need prayers</label><br>
+                                <input type="checkbox" id="concern2" name="concern2" value="Car">
+                                <label for="concern2"> I want to join a Discipleship group</label><br>
+                                <input type="checkbox" id="concern3" name="concern3" value="Boat">
+                                <label for="concern3"> I have other concers</label>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Close</button>
+                            <button type="button" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="col bg-light border m-1 p-5">
+                <h3>Kid's Sunday School</h3>
+                <p>9:30am-11:00am (Kids Area)</p>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#regmodal1">Schedule your child</button>
+            </div>
+            <div class="modal fade" id="regmodal1">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Please Fill In Details</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <label for="fname">Parent's Name:</label><br>
+                                <input type="text" id="fname" name="fname" size="50" placeholder="Last Name, First Name" required><br>
+                                <label for="cname">Child's Name:</label><br>
+                                <input type="text" id="cname" name="cname" size="50" placeholder="Last Name, First Name" required><br>
+                                <label for="age">Child's age:</label><br>
+                                <input type="number" id="age" required min="1" max="12" placeholder="enter age from 1 to 12 years old"><br>
+                                <label for="address">Address:</label><br>
+                                <input type="text" id="address" name="address" size="50" placeholder="City or Country"><br>
+                                <label for="phone">Contact No.:</label><br>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" size="50" placeholder="mobile"><br>
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" name="email" size="50"><br>
+                                <label for="visitdate">Plan to visit (date):</label><br>
+                                <input type="date" id="visitdate" name="visitdate" required><br><br>
+                                
+                            </form>
+                            
+                        </div>
+
+                        <div class="modal-footer">
+                            <form action="mailto:youraddr@domain.tld" method="SEND">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Close</button>
+                            <button type="submit" class="btn btn-secondary" value="send" mailto="mailto:youraddr@domain.tld">Submit</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="a.jpg"  class="d-block w-100" alt="Men Ministry">
+              <div class="carousel-caption d-none d-sm-block">
+              <h1>Men's Ministry</h1>
+              <p>Join a group of men walking together to know Christ more. We meet every Sundays and every 3rd Saturday of the month.</p>
+            </div>
+        </div> 
+            <div class="carousel-item">
+              <img src="b.jpg" alt="Women's Ministry" class="d-block w-100">
+              <div class="carousel-caption d-none d-sm-block">
+                <h1>Women's Ministry</h1>
+                <p>Women's fellowship every 4th Sunday of the month</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="c.jpg" alt="Young People" class="d-block w-100">
+              <div class="carousel-caption d-none d-sm-block">
+                <h1>Young People Ministry</h1>
+                <p>Take part in steps of growth with God together with others like you who are navigating college and high school life!</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+       <br>
+       <br>
+
+       <div class="container-md" id="acord">
+        
+        <h2>WHO WE ARE</h2>
+        <p>WE ARE A MOVEMENT OF MEN AND WOMEN WHO HAVE ENCOUNTERED GOD AND COMMITTED OUR LIVES TO THE LORD, FOCUSED ON MAKING AN IMPACT THROUGH THE WORK OF THE HOLY SPIRIT IN TRANSFORMING LIVES, FAMILIES, COMMUNITIES AND NATIONS, FOR THE GLORY OF GOD!</p>
+        <button class="accordion" id="mission">Our Mission</button>
+        <div class="panel">
+          <p>A church that knows God and makes Him known to the world.</p>
+        </div>
+        
+        <button class="accordion" id="vision">Our Vision</button>
+        <div class="panel">
+          <p>With the enabling power of the Holy Spirit, we are committed to grow in intimacy with God and build spiritual movements.</p>
+        </div>
+        
+        <button class="accordion" id="statement">Statement of Faith</button>
+        <div class="panel">
+          <p>
+            1. The Bible is the Word of God and our final authority.<br>
+            2. God is one, infinitely perfect, existing in three persons: Father, Son and Holy Ghost.<br>
+            3. Jesus is both God and Man, was conceived by the Holy Spirit, born of the virgin Mary, died for our sins, was buried, rose bodily from the dead, is in heaven, and will return to set up His kingdom.<br>
+            4. God the Holy Spirit lives in the believer, controls, guides and teaches the believer, and convicts the world.<br>
+            5. Man was created in God’s image but man’s sin separated him from God. All men are born with a sinful nature and only Jesus Christ’s sacrifice can provide forgiveness of man’s sin.<br>
+            6. Salvation is available in Jesus, His death and resurrection, and believers have eternal life and have become children of God.<br>
+            7. There shall be a bodily resurrection of the just and the unjust; the just will be resurrected unto life and the unjust unto judgment.<br>
+            8. The Church is all who believe in the Lord Jesus Christ and have received eternal life. It is their duty to pray, witness, build each other up in the faith, and obey the Great Commission.<br>
+            9. All believers need to be filled with the Holy Spirit after they are saved. This is how God gives the believer power for the holy living and effective service.<br>
+            10.Salvation Jesus provided for physical healing and we anoint with oil in Jesus’ name for healing today.<br>
+            11.The soon return of the Lord Jesus Christ is a practical truth that needs to be preached, showing its relation to the personal life and service of the believer.</p><br>
+        </div>
+
+        <button class="accordion" id="core">Our Core Values</button>
+        <div class="panel">
+          <h5><span>I</span>NTIMACY WITH GOD</h5>
+          <p>knowing God thru prayer and Bible studies</p>
+          <h5><span>C</span>HRIST-CENTERED</h5>
+          <p>Dependent on Christ</p>
+          <h5><span>M</span>ISSION FOCUSED</h5>
+          <p>Evangelism, Discipleship and Mission</p>
+          <h5><span>A</span>CCOUNTABILITY</h5>
+          <p>Being accountable with others-within and outside</p>
+          <h5><span>C</span>OMMUNITY</h5>
+          <p>Fellowship within the church, solidify our unity, and visitation</p>
+        </div>
+    </div>
+        
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+    </div>
+    <br>
+    <br>
+
+    <div class="container bg-info" id="leaders">
+        <H2>MEET OUR LEADERS</H2>
+        <div class="row">
+            <div class="col6">
+        <h4>Ptr. Deme Raj Plagata</h4>
+        <h6>Resident Pastor</h6>
+        <p>Pastor Deme Raj Plagata has faithfully served the Lord since 2001. He is a wife to Mrs. Corren Plagata and has two daughters namely Auli and MK. "Pastor Mating" as most of us call him, is also into tennis. </p>
+        </div>
+        </div>
+            
+        <br>
+        <h4>Mary Ann Sugabo</h4>
+        <h6>CE Director</h6>
+        <p>"Ma'am Ann" her nickname, has the function of CE (Christian Education) Director. She has served as a missionary in China in 2010 to 2014. Ma'am Ann is married to Elder Joel Sugabo.</p>
+    <div class="contact-area" id="contact">
+        <div class="container bg-light">
+        <h2 class="section-title"><span>Contact</span> Us</h2  >
+        
+        <ul class="contact-content">
+            <li>
+                <i class="fa fa-map-marker"></i>
+                <p>Smallville complex <br> Iloilo City, Philippines</p>
+            </li>
+            <li>
+                <i class="fa fa-phone"></i>
+                <p>+63 33 323 3354</p>
+            </li>
+            <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:icmac_smallville@yahoo.com">icmac_smallville@yahoo.com</a>
+
+
+            </li>
+            <li>
+                <i class="fa fa-facebook"></i>
+                <a href="https://web.facebook.com/icmac.smallville?_rdc=1&_rdr">fb.com/icmac.smallville</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=300&amp;height=250&amp;hl=en&amp;q=icmac smallville&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:250px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:250px;}.gmap_iframe {height:250px!important;}</style></div>
+    <div class = "footer mt-1 p-4 bg-dark text-white text-center">
+        <p>All Rights Reserved ©2022. <br> Iloilo Christian and Missionary Alliance Church.</p>
+        <p1>Benigno S. Aquino Ave., Mandurriao, Iloilo City 5000 Philippines</p1>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
